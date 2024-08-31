@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+
+   <div class="main-container" >
+    <div class="first" id="step1">
+    <div class="left-side">
+        <div class="inline">
+        <div class="number">1</div>
+        <p>Step 1</p>
+    </div>
+        <h3>YOUR INFO</h3>
+    </div>
+
+    <div class="right-side">
+        <h2>Personal Info </h2>
+        <p class="cf">Please provide your name,email address and phone number.</p>
+
+        <form action="">
+            <p >Name</p>
+            <input type="text" name="" id="fullName" placeholder="vanessa mint"required>
+            <p>Email Address</p>
+            <input type="email" placeholder="@vanessamint" id="emailAddress">
+            <p>Phone number</p>
+            <input type="number" name="" id="phoneNumber" placeholder="e.g +12345678" required>
+        </form>
+        <button onclick="heyme()">Next</button>
+    </div>
+  </div>
+
+     <div class="first" id="step2" style="display: none;">
+        <div class="first">
+        <div class="left-side "></div>
+        <div class="right-side">
+            <h2>Pick add-ons</h2>
+            <p>Add-ons help enhance your gaming experience</p>
+
+            <form action="">
+                <div class="checkbox">
+                   
+                  <input type="checkbox" name="" id="" class="input">
+                  <h4>Online Service</h4>
+                </div>
+
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="" class="input">
+                  </div>
+
+
+                  <div class="checkbox">
+                    <input type="checkbox" name="" id="" class="input">
+                  </div>
+            </form>
+            
+            <!-- <a href="#" id="step1">Previous</a> -->
+            <button onclick="myfunction()">Next</button>
+            <a href="" id="step1">Previous</a>
+        </div> 
+    </div>
+     </div>
+    
+   </div>
+
+<script src="./app.js"></script>
+</body>
+</html>
+
+
+

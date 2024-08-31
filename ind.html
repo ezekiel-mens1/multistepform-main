@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- jequery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- sweet alert css-->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.3/dist/sweetalert2.min.css"> -->
+
+    <!-- sweet alert jequery-->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
+
+
+</head>
+<body class="bg-dark">
+    <div class="main-container">
+        <div class="first">
+            <div class="left-side">
+                <!-- <div class="inline">
+                    <div class="number">
+                        1
+                    </div>
+                    <p class="">Step 1</p> 
+                    <p>Your Info</p>
+                    because of the jeQuery I have taken out the onclick functions 
+                </div> -->
+            </div>
+            <div class="right-side">
+                <form method="POST" name="myFrom" action="./login.php" id="Validations">
+                    <div id="step1">
+                        <h2>Kindly Complete the form </h2>
+                        <h5 class="alert alert-info">Personal Info</h5>
+                        <!-- <p id="alertMessage1"></p> -->
+                        <label for="">Name</label>
+                        <input type="text" name="fullName" id="fullName" required placeholder="Vanessa mint"  class="form-control mb-2">
+                        <label for="">Email Address</label>
+                        <input type="email" id="emailAddress" required placeholder="Vanessa@" class="form-control mb-2" name="email">
+                        <label for="">Phone Number</label>
+                        <input type="text" class="form-control" name="phoneNumber" id="phoneNumber" placeholder="+233 2657 333 234">
+                        <p id="alertMessage1" class="pt-4"></p>
+                        <button   id="button"type="button">Next</button>
+                    </div>
+                    <div id="step2" style="display: none;">
+                        <h2>Kindly Complete the form </h2>
+                        <h5 class="alert alert-info">Basic info</h5>
+                        <p id="alertMessage2" class="pt-3"></p>
+                        <label for="">ID number</label>
+                        <input type="number" name="IDnumber" id="IDnumber" required placeholder="0000 2345"  class="form-control mb-2">
+                        <label for="">Date of birth </label>
+                        <input type="date" id="date" name="date" placeholder="" class="form-control mb-2">
+                        <!-- <label for="">Select Gender:</label>
+                        <select name="Gender" id="Gender" class="form-control">
+                            <option >Select Your Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select> -->
+                        <!-- <input type="text"  class="form-control" id="Gender"> -->
+                        <button  type="button" id="button2">Next</button>
+                    </div>
+                    <div id="step3" style="display: none;">
+                        <h2>Kindly Complete the form </h2>
+                        <h5 class="alert alert-info">Basic info II</h5>
+                        <p id="alertMessage3" class="pt-3"></p>
+                        <label for="">Country</label>
+                        <input type="search" name="country" id="country"  placeholder="Ghana"  class="form-control mb-2">
+                        <label for="">Password </label>
+                        <input type="password" id="password" class="form-control mb-2"required title="paswwords must be at least 6 characters.">
+                        <label for="">Confirm Password</label>
+                        <input type="password"  class="form-control" id="confirmPassword" name="confirmpassword" >
+                        <p class=" text-danger">paswwords must be at least 6 characters</p>
+                        <button  type="button" id="button3" value="submit" name="submit">Submit</button> 
+
+                    <div id="step4" style="display: none;">
+                        <img src="./assets/images/icon-thank-you.svg" alt="image" class="ms-9">
+                        <h5 class="text-center">Thank you </h5>
+                        <p class="">Thank you for confirming your subscription you will be notified shortly.</p>
+                        <p id="FullNameValue"> </p>
+                        <p id="emailv"></p>
+                        <p id="phonev"></p>
+                        <p id="Idnumberv"></p>
+                        <p id="datev"></p>
+                        <p id="genderv"></p>
+                        <p id="countryv"></p>
+                        <p id="passwordv"></p>
+                        <p id="confirmv"></p>
+
+                    </div>
+                    
+                </form>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+    
+<script src="./app.js"></script>
+<script src="./sweetalert.js"></script>
+</body>
+</html>
+
+
+

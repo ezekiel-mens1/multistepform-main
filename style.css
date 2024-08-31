@@ -1,0 +1,111 @@
+
+@font-face {
+    font-family: Ubuntu-bold;
+    src: url(./assets/fonts/Ubuntu-bold.ttf);
+}
+
+ :root{
+    --primary:var(rgb(181, 179, 179));
+    --container: var(white);
+    --wide-range: var(rgb(32, 39, 49));
+ }
+ .main-container{
+    margin: auto;
+    margin-top: 100px;
+    padding: 10px;
+    height: 500px;
+    background-color: white;
+    width: 50%;
+    border-radius: 10px;
+ }
+ 
+
+ .left-side{
+    width: 230px;
+    height: 480px;
+    border-radius: 6px;
+    background:url(./assets/images/bg-sidebar-desktop.svg) ;
+    background-position: center;
+    background-size: cover;
+    margin-right: 80px;
+ }
+ .right-side{
+    margin-top: 30px;
+    ::-webkit-scrollbar-track{
+      width: 12px;
+    }
+ }
+ .right-side h2{
+    font-family: Ubuntu-bold;
+    color: rgb(39, 39, 72);
+ }
+ .right-side input{
+    width: 350px;
+    outline: none;
+    height: 40px;
+    border-color: gray;
+    border-radius: 7px;
+ }
+ .right-side button{
+    background: rgb(39, 39, 72);
+    color: white;
+    border-radius: 7px;
+    padding: 10px 35px;
+    margin-left: 60%;
+    margin-top: 5%;
+    cursor: pointer;
+
+ }
+ 
+ .first{
+    display: flex;
+ }
+ 
+ /* Step 2  */
+ .checkbox{
+    width: 350px;
+    height: 55px;
+    margin-top: 40px;
+    padding: auto;
+    background-color: blanchedalmond;
+    border-radius: 7px;
+    border: 1px solid rgb(39, 39, 72);
+ }
+ .checkbox .input{
+    width: 30px;
+    height: 20px;
+    margin-top: 17px;
+    margin-left: 15px;
+ }
+ a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px ;
+    border-radius: 7px;
+    margin-right: 90px;
+    background: rgb(37, 37, 42);
+ }
+ /* Left side of the container */
+ .number {
+   background-color: brown;
+   height: 30px;
+   width: 30px;
+   border-radius: 50%;
+   text-align: center;
+   margin: 30px;
+ }
+ .inline{
+   display: flex;
+   margin: 20px;
+   display: inline-flex;
+ }
+
+ 
+ 
+  /* input-control.success input{
+      border-color: #09c372;
+ }
+
+ .right-side .input-control.error input{
+   border-color: #ff3860;
+} */
